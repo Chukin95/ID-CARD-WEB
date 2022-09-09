@@ -7,7 +7,11 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ID CARD WEB - Cristian Gomez</title>
 	<link rel="stylesheet" href="./css/normalize.css"> <!-- Normalizar para todos los navegadores -->
-	<link rel="stylesheet" href="./css/bootstrap.css"> <!-- Bootstrap 5 -->
+	<link rel="stylesheet" href="./css/bootstrap.min.css"> <!-- Bootstrap 5 -->
+  <!-- <link rel="stylesheet" href="./css/fontawesome.min.css"/> -->
+  <!-- <script src="https://use.fontawesome.com/174f705456.js"></script> -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/></script>
+  <script src="https://kit.fontawesome.com/e2ad0f9888.js" crossorigin="anonymous"></script> <!-- Font Awesome -->
 	<link rel="stylesheet" href="./css/style.css"> <!-- Estilos personalizados -->
 </head>
 <body>
@@ -21,20 +25,76 @@
 
 	<div class="main-overlay"></div>
 
-	<div class="main-content">
-		<h1 class="title">ID CARD WEB</h1>
-		<p>Hola, soy Cristian Gomez, tengo 27 años de edad, soy de Resistencia, Chaco.</p> 
-		<p>Desde el 2021 soy estudiante de programación web, también soy egresado de CoC Fullstack Python, muy apasionado por el mundo IT!</p>
-		<a href="#" class="btn btn-secondary">Más</a>
+	<div class="main-content overflow-hidden">
+    <div class="card-wrapper">
+      <div class="content">
+        <div class="face-front z-depth-2">
+          <img id="img-round" src="./img/hombre.png" class="rounded-circle animate__animated  animate__rotateIn" alt="./img/react-logo.png" title="Logo">
+          <div class="card-body">
+            <h1 class="card-body-title font-weight-bold">Cristian Gomez</h1>
+            <h6 class="card-body-text font-weight-bold">Web Developer</h6>
+            <hr>
+            <p class="card-body-text">Hola, soy Cristian Gomez, tengo 27 años de edad, soy de Resistencia, Chaco.</p>
+            <p class="card-body-text">Desde el 2021 soy estudiante de programación web en Informatorio Chaco, ONE Frontend con Alura latam, también soy egresado de CoC Fullstack Python 2022, actualmente me encuentro en el Argentina Programa y ReactJS de Codo a Codo con la Agencia de Aprendizaje del Gobierno de la Ciudad de Buenos Aires.</p>
+          </div>
+        </div>
+        <div class="face-back z-depth-2">
+          <div class="card-body mt-md-5">
+            <div class="skills">
+              <h1 class="card-body-title font-weight-bold">Skills</h1>
+              <hr>
+              <p class="card-body-text">Lorem ipsum dolor sit amet, consectetur maxime voluptatem, reprehenderit, esse aspernatur!</p>
+            </div>
+            <div class="contact">
+              <h1 class="card-body-title font-weight-bold mt-md-5">Contact</h1>
+              <hr>
+              <div class="container">
+                <div class="row">
+                  <div class="col-6 my-4 mt-5">
+                    <a href="https://www.facebook.com" class="p-2 fa-lg fb-ic"><i class="fa fa-xl fa-facebook-f fa-beat fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i></a>
+                  </div>
+                  <div class="col-6 my-4 mt-5">
+                    <a href="https://www.instagram.com" class="p-2 fa-lg fb-ic"><i class="fa fa-xl fa-instagram fa-beat fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i></a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-4">
+                    <a href="https://wa.me/543624068392" class="p-2 fa-lg fb-ic"><i class="fa fa-xl fa-whatsapp fa-beat fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i></a>
+                  </div>
+                  <div class="col-6 my-4">
+                    <a href="https://www.telegram.com" class="p-2 fa-lg fb-ic"><i class="fa fa-xl fa-telegram fa-beat fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i></a>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 my-4">
+                    <a href="https://www.linkedin.com/in/cristiangomez95/" class="p-2 fa-lg fb-ic"><i class="fa fa-xl fa-linkedin fa-beat fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i></a>
+                </div>
+                  <div class="col-6 my-4">
+                    <a href="https://www.github.com/Chukin95" class="p-2 fa-lg fb-ic"><i class="fa fa-xl fa-github fa-beat fa-fade" style="--fa-animation-duration: 2s; --fa-fade-opacity: 0.6;"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 	</div>
+
+	<footer class="footer">
+		<div class="row">
+			<div class="col-8"></div>
+			<p>© Copyright <script>document.write(new Date().getFullYear());</script> Cristian Gomez. All Rights Reserved.</p>
+		</div>
+	</footer>
 </main>
 
-<footer class="footer content justify-content-center fixed-bottom">
-	<div class="row">
-		<div class="col-8"></div>
-		<p>© Copyright <script>document.write(new Date().getFullYear());</script> Cristian Gomez. All Rights Reserved.</p>
-	</div>
-</footer>
+<!--
+<h1 class="title">ID CARD WEB</h1>
+<p>Hola, soy Cristian Gomez, tengo 27 años de edad, soy de Resistencia, Chaco.</p>
+<p>Desde el 2021 soy estudiante de programación web, también soy egresado de CoC Fullstack Python, muy apasionado por el mundo IT!</p>
+<a href="#" class="btn btn-secondary">Más</a>
+-->
 
 <script src="./js/bootstrap.bundle.js"></script> <!-- Bootstrap 5 -->
 <script src="./js/main.js"></script>
