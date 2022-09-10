@@ -38,7 +38,7 @@ html {
 }
 
 .card-wrapper {
-  width: 400px;
+  width: 350px;
   height: 600px;
   perspective: 1000px;
 }
@@ -162,7 +162,7 @@ a[href] {
   .main-content {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
-  margin: 3rem 1rem 15rem 1rem; /* arriba derecha abajo izquierda */
+  width: max-content;
   font-size: 1rem;
   }
   .video-bg {
@@ -190,4 +190,10 @@ a[href] {
   width: 50%;
   margin: 3%;
   }
+}
+
+@media (max-width: 390px) {
+    .main-content {
+        margin-left: 50px;
+    }
 }
